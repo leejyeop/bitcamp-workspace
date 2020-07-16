@@ -30,4 +30,19 @@
  -bitcamp-java-basic 폴더 생성
  ->gradle init 실행 하여 프로젝트 폴더 초기화
   실습
-  -Hello2.java
+  - src/main/java/Hello2.java
+ -src/main/java/com/eomcs/basic 폴더 생성
+ -src/main/java/com/eomcs/basic/Hello2.java 생성
+
+패키지소속 클래스 실행하기
+java -cp 위치.이름
+
+
+
+com.eomsc.basic.ex01패키지의 예제
+
+주석의 종류와 사용법
+com.eomcs,basic.ex02패키지 예제
+
+자바언어로 값을 표현 하는 문법 (literal)
+com.eomcs.basic.ex03 패키지 예제

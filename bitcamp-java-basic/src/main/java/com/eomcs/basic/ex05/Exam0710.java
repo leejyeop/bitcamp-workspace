@@ -9,7 +9,9 @@ public class Exam0710 {
     //i = i + 20;
     i += 20; // += 연산자를 사용하면 위의 코드를 축약할 수 있다.
     System.out.println(i);
-
+    i = 3;
+    i &= 6;
+    System.out.println(i);
     i = 2;
     i *= 5;
     System.out.println(i);

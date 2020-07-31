@@ -1,0 +1,5 @@
+ 이클립스안될때 ,파일에 느낌표 떠있을때
+콘솔창에서 해당폴더로가서 빌드를 지운다 gradle clean 한다
+gradle cleanEclipse 이클립스 설정파일을 지운다 
+gradle Eclipse하고
+이클립스가서 리프레쉬한다

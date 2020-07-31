@@ -1,0 +1,24 @@
+폴더안이 비었으면 git에 백업할때 폴더도 안올라감
+
+연습
+자바프로젝트(bitcamp-java-project)만들기
+
+자바 프로젝트 실행하기 >gradle run
+자바프로젝트 빌드하기 > gradle build d완성하는거
+Eclipse IDE로 프로젝트 가져오기
+
+
+gradlew 는 gradle jar파일을 풀어서 실행함
+tar -xvf *.tar 압축풀기 
+
+
+  gradle build 패킹 고객 배포
+  istributions  
+│   │   ├── bitcamp-java-project.tar
+│   │   └── bitcamp-java-project.zip
+
+
+   gradle run 그냥 실행 패킹은 x
+ 로컬에설치헀으면 gradlew
+ git 저장소안에 git저장소를 만들면안된다 
+

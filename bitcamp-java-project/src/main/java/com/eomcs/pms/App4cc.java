@@ -14,7 +14,7 @@ import java.util.Scanner;
 //6상수를 사용하여 초기값을 변경하지 못하게막기
 //변수는 중간에 값을 바꿀수 있기 때문에 값을 바꾸지 말아야 하는 경우
 //실수를 막기위해 상수로 변경을 선언한다. 상수는 값을 못바꾼다
-public class App {
+public class App4cc {
 
   //1)회원의 번호 이름 이메일 암호 사진 전화번호 등록일을 담을 수 있는 메모리 설계하는것을
   //member  클래스 정의라한다
@@ -34,7 +34,7 @@ public class App {
       String photo;//인스턴스
       String tel;//인스턴스
       Date createdDate;//인스턴스
-      //자바는 인스턴스만들려면 new 명령어를 사용해야 만들수있다
+      //자바는 인스턴스만들려면 new 명령어를 사용해야 만들수있
       //===========인스턴스를 배열로 만드는 문법은 없다 ========
     }
 
@@ -43,8 +43,8 @@ public class App {
     //int[] no = new int[MAX_LENGTH];
     //new Member[LENGTH];
     Member[] members = new Member[LENGTH]; //래퍼런스배열을 여러개 만듬
-//members라는 래퍼런슬여러개만듬
-//  members[i] = m;
+
+
     Scanner keyInput = new Scanner(System.in);
 ///////////////////////1번회원
     System.out.println("[회원]");
@@ -53,8 +53,7 @@ public class App {
 
     for (int i = 0; i < LENGTH; i++) {
       count++;
-      //Member m;
-      //m = new Member();
+      members[i] = new Member();
       Member m = new Member();
 
       System.out.print("번호? ");
@@ -75,29 +74,21 @@ public class App {
 
       System.out.print("전화?");
       m.tel = keyInput.nextLine();
-
       currentMillis = System.currentTimeMillis(); //(8바이트)
       //1970년 1-1일 00:00:00에서 경과된 밀리초
       m.createdDate = new Date(currentMillis);
-
-      members[i] = m;
-
       System.out.println();
       System.out.println("계속 입력하시겠습니까? (y/N)");
-      String response = keyInput.nextLine();
-
+      String response =keyInput.nextLine();
       if (!response.equalsIgnoreCase("y")) {
         break;
       }
-
       //if (!response.equals("y")|| response.equals("Y"))
-
     }
     keyInput.close();
     for (int i = 0; i< count; i++) {
       Member m = members[i];
-      System.out.printf("%d, %s, %s ,%s ,%s\n",
-          m.no, m.name,m.email,m.tel,m.createdDate.toString());
+      System.out.printf("%d, %s, %s ,%s ,%s\n",m.no, m.name,m.email,m.password,m.createdDate.toString());
     }
 
 
@@ -111,11 +102,8 @@ public class App {
 //    Member m;
 //    //Member :설계도에 따라 메모리 생성 방법
 //    //메모리 담는 장소 래퍼런스
-
-// Project[] projects = new Project[LENGTH]; // 배열만드는거
+//
 //    m = new Member();//인스턴스 만드는 방법
-//    Project p = new Project();
-    //projects[i] = p;
 //    //m에 저장된 주소로 찾아가서 해당 인스턴스의 각항목에 데이터 넣기
 //    m.no = 1; //m 은 래퍼런스 변
 //    m.name = "홍길동";

@@ -1,0 +1,14 @@
+javac -d bin/main src/main/java/com/eomcs/pms/App.java 컴파일
+java -cp bin/main com.eomcs.pms.App 실행  -(cp경로) (bin/main패키지경로) (com.eomcs.pms.App파일위치)
+
+javac -d bin/main src/main/java/com/eomcs/pms/App2.java
+java -cp bin/main com.eomcs.pms.App2
+[프로젝트]
+프로젝트명: 미니 프로젝트 관리 시스템 개발
+내용: 소규모 팀을 위한 프로젝트 관리 시스템을 개발 한다.
+시작일: 2020-01-01
+종료일:2020-12-31
+만든이: 홍길동
+팀원: 홍길동,김구,유관순,안중근,윤봉길
+
+

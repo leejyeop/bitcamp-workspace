@@ -1,0 +1,35 @@
+자바 기본 단위는 클래스
+
+기본단위인 클래스가 한파일안에 여러개 있어도 됨
+
+기본단위인 클래스는 컴파일 할 수 있지만 실행할수없음
+실행을 하려면 public static void main(String[] args) {} 가 필요함
+
+클래스 이름과 소스파일 이름이 달라도 됨
+하지만 public 을 클래스앞에사용하여 공개하면 클래스 이름과 파일 이름을 같게 해야 함 유지보수 떄문
+
+/** */자바독 주석 문서를만들때 추출해서 쓴다
+
+//javadoc 주석 다른개발자를 위해서 이클래스를 담은 문서를 생성하기위한 
+//javadoc.exe로 추출하면 html문서(코드사용법)로 추출됨
+//한 class당 주석 하나
+
+javadoc -encoding UTF-8 -charset UTF-8 -d doc -sourcepath src/main/java com.eomcs.basic.ex02 자바독
+javac -encoding UTF-8 -d bin src/main/java/com/eomcs/basic/ex02/Exam0200.java
+
+ @Override  //기존 기능을 재정의하는것이 맞는지 검사하라는 명령
+    public String toString() {
+       return "test";
+    }
+
+//8바이트 메모리를 사용하는 정수 리터럴
+        System.out.println(2_147_483_648L);
+        System.out.println(-2_147_483_649L); 숫자뒤에 L을 붙이면 8바이트 메모리사용3
+
+System.out.println(1); //4 바이트 메모리를 사용하는 1
+System.out.println(1L); //8 바이트 메모리를 사용하는 1
+
+System.out.println(Integer.MAX_VALUE); //4바이트 정수 최대값
+        System.out.println(Integer.MIN_VALUE); //4바이트 정수 최소값
+        System.out.println(Long.MAX_VALUE);//8바이트 최대 값
+        System.out.println(Long.MIN_VALUE);//8바이트 최소 값

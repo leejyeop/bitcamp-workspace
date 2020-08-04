@@ -1,0 +1,33 @@
+push
+pull
+git init 깃백업
+폴더추가
+git add 추가변경한걸 백업폴더에 변경
+git commit -m "사유" 작업파일 로컬저장소에서 백업
+git checkout  로컬저장소에서 작업대상을 꺼냄
+git remote add origin https://github.com/leejyeop/bitcamp-workspace.git 내꺼 넣는거
+                            https://github.com/leejyeop/bitcamp-java-project.git
+git push -u origin master 내꺼 넣는거 2
+javac -encoding UTF-8 Hello2.java 인코딩 
+java Hello2 실행
+rm *.class 클래스 다지움
+javac -encoding UTF-8 src/main/java/Hello2.java 다른폴더에있는거 컴파일
+java -classpath src/main/java Hello2 다른폴더에이는거 실행
+java -classpath ../ Hello 상위폴더실행
+javac -encoding UTF-8 -d bin src/main/java/Hello2.java 다른폴더에 바이트 코드생성 소스파일과 바이트코드 분리
+java -cp bin  com.eomcs.basic.Hello2 패키지 문법을사용한거 실행
+
+gradle init 사용하면 글로벌 스탠다드 규격으로 폴더생성됨
+
+
+패키지명령을 사용하여 클래스의 소속을 지정  package com.eomcs.basic;
+소속이 지정된 클래스는 파일이 com .eomcs.basic 아래에생성됨
+gradle build
+
+gradle init 설명
+어플리캐이션 제너레이트 프로젝트 타입
+자바 임플리먼테이션 랭귀지
+그루비 빌드 스크립트
+제이유닛 4 테스트 프레임워크
+아무거나 프로젝트 네임
+패키지이름 app으로

@@ -1,0 +1,7 @@
+package com.eomcs.basic.oop.ex06.c;
+
+public class D {
+  void m() {
+    System.out.println("D의 m()");
+  }
+}

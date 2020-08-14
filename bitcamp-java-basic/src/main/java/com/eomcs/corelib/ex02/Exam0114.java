@@ -4,7 +4,7 @@ package com.eomcs.corelib.ex02;
 public class Exam0114 {
   public static void main(String[] args) {
 
-    String s1 = new String("Hello");
+    String s1 = new String("Hello");//힙에만듬
 
     // 먼저 상수풀에 String 객체를 생성해보자.
     String s2 = "Hello";

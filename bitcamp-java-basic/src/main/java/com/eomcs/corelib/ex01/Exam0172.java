@@ -40,6 +40,46 @@ public class Exam0172 {
     }
   }
 
+  //  @Override
+  //    public int hashCode() {
+  //      final int prime = 31;
+  //      int result = 1;
+  //      result = prime * result + Float.floatToIntBits(aver);
+  //      result = prime * result + eng;
+  //      result = prime * result + kor;
+  //      result = prime * result + math;
+  //      result = prime * result + ((name == null) ? 0 : name.hashCode());
+  //      result = prime * result + sum;
+  //      return result;
+  //    }
+  //
+  //    @Override
+  //    public boolean equals(Object obj) {
+  //      if (this == obj)
+  //        return true;
+  //      if (obj == null)
+  //        return false;
+  //      if (getClass() != obj.getClass())
+  //        return false;
+  //      Score other = (Score) obj;
+  //      if (Float.floatToIntBits(aver) != Float.floatToIntBits(other.aver))
+  //        return false;
+  //      if (eng != other.eng)
+  //        return false;
+  //      if (kor != other.kor)
+  //        return false;
+  //      if (math != other.math)
+  //        return false;
+  //      if (name == null) {
+  //        if (other.name != null)
+  //          return false;
+  //      } else if (!name.equals(other.name))
+  //        return false;
+  //      if (sum != other.sum)
+  //        return false;
+  //      return true;
+  //    }
+
   public static void main(String[] args) throws Exception {
 
     Score s1 = new Score("홍길동", 100, 100, 100);

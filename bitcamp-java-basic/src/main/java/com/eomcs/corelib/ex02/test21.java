@@ -1,12 +1,7 @@
-// Wrapper 클래스 - 종류
 package com.eomcs.corelib.ex02;
 
-public class Exam0210 {
-  public static void main(String[] args) {
-    // 자바는 primitive data type의 값을 다룰 때 기본 연산자 외에
-    // 좀 더 다양한 방법으로 다루기 위해
-    // primitive data type에 대응하는 클래스를 제공한다.
-    // 예)
+public class test21 {
+  public static void main(String[] args)  {
     Byte b = new Byte((byte)100);               // ==> byte
     Short s = new Short((short)20000);          // ==> short
     Integer i = new Integer(3000000);           // ==> int
@@ -36,29 +31,22 @@ public class Exam0210 {
     Character c2 = Character.valueOf((char)0x41);
   }
 
+  void m1(Object value) {
+    System.out.printf("value=%s\n", value);
+  } // 모든 객체를 받을 수 있다.
 
-
-  void m4(Object value) { //Object의 모든 객체를 받을 수 있다
-    System.out.printf("value= %s\n", value);
+  // 만약에 Wrapper 클래스가 없다면 다음과 같이
+  // 정수를 받는 메서드와 부동소수점을 받는 메서드,
+  // 논리값을 받는 메서드를 따로따로 정의해야 한다.
+  // => 이런 불편함을 없애기 위해 Wrapper 클래스를 만든 것이다.
+  // => 즉 primitive type을 객체와 함께 다룰 수 있도록 만든 문법이다.
+  void m2(long value) { // byte, short, int, long, char
+    System.out.printf("value=%s\n", value);
   }
-  //만약 Wrapper 클래스가 없다면
-  //다음과 같이 정수를 받는 메서드와 부동소수점을 받는 메서드
-  //논리값을 받는 메서드를 따로따로 정의 해야 한다.
-  //이런 불편함을 없에기 위해 Wrapper클래스를 만든 것이다.
-  //즉 primitive type을 객체와 함께 다룰 수 있도록 만든 문법이다.
-  void m1(int value) {//byte short int long char
-    System.out.printf("value= %s\n", value);
+  void m3(double value) {// float, double
+    System.out.printf("value=%s\n", value);
   }
-  void m2(double value) {//float double
-    System.out.printf("value= %s\n", value);
-  }
-  void m3(boolean value) {//boolean
-    System.out.printf("value= %s\n", value);
+  void m4(boolean value) {// boolean
+    System.out.printf("value=%s\n", value);
   }
 }
-
-
-
-
-
-

@@ -17,6 +17,7 @@ public class Exam0110 {
 
     // 인스턴스가 같은지를 비교해보면,
     System.out.println(s1 == s2); // false => 서로 다른 인스턴스이다.
+    System.out.println(s1.equals(s2));
   }
 }
 

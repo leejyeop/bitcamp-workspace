@@ -1,36 +1,38 @@
 package com.eomcs.corelib.ex03;
 
 public class MyArrayListTest2 {
+
   public static void main(String[] args) {
-    MyArrayList.add("aaa");
+    MyArrayList.add("aaa"); // aaa
     print();
-    MyArrayList.add("bbb");
+    MyArrayList.add("bbb"); // aaa,bbb
     print();
-    MyArrayList.add("ccc");
+    MyArrayList.add("ccc"); // aaa,bbb,ccc
     print();
-    MyArrayList.add("ddd");
+    MyArrayList.add("ddd"); // aaa,bbb,ccc,ddd
     print();
-    MyArrayList.add("eee");
+    MyArrayList.add("eee"); // aaa,bbb,ccc,ddd,eee
     print();
-    MyArrayList.add("fff");
+    MyArrayList.add("fff"); // aaa,bbb,ccc,ddd,eee,fff
     print();
-    MyArrayList.add("ggg");
+    MyArrayList.add("ggg"); // aaa,bbb,ccc,ddd,eee,fff,ggg
     print();
-    MyArrayList.add("hhh");
-    print();
-    MyArrayList.add(8,"iii");
+    MyArrayList.add("hhh"); // aaa,bbb,ccc,ddd,eee,fff,ggg,hhh
     print();
 
-    Object old = MyArrayList.remove(5);
+    MyArrayList.add(8, "iii"); // aaa,bbb,ccc,ddd,eee,fff,ggg,hhh,iii
+    print();
+
+    Object old = MyArrayList.remove(5); // aaa,bbb,ccc,ddd,eee,ggg,hhh,iii
     print();
     System.out.println(old);
-    MyArrayList.set(8,"xxx");
+
+    MyArrayList.set(7, "xxx");
     print();
 
     System.out.println(MyArrayList.get(7));
 
   }
-
 
   static void print() {
     for (int i = 0; i < MyArrayList.size; i++) {

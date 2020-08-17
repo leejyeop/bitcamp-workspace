@@ -6,23 +6,23 @@ import java.util.ArrayList;
 public class Exam0120 {
   public static void main(String[] args) {
     ArrayList list = new ArrayList();
-    list.add("aaa"); // aaa, 주소가저장됨
-    list.add("bbb"); // aaa, bbb, 주소가저장됨
-    list.add("ccc"); // aaa, bbb, ccc, 주소가저장됨
-    list.add("ddd"); // aaa, bbb, ccc, ddd, 주소가저장됨
-    //=================  0    1    2    3
+    list.add("aaa"); // aaa,
+    list.add("bbb"); // aaa, bbb,
+    list.add("ccc"); // aaa, bbb, ccc,
+    list.add("ddd"); // aaa, bbb, ccc, ddd,
 
     print(list);
 
-    list.remove(2); // aaa, bbb, ddd, //2번주소를 날림
+    list.remove(2); // aaa, bbb, ddd,
     print(list);
 
     list.remove(0); // bbb, ddd,
     print(list);
 
     // 유효한 인덱스가 아니면 예외 발생시킨다!
-    //list.remove(4); // 실행 오류!
-    print(list);
+    //    list.remove(4); // 실행 오류!
+    //    print(list);
+
     list.add(1, "xxx"); // bbb, xxx, ddd,
     list.add(1, "yyy"); // bbb, yyy, xxx, ddd
     list.add(0, "zzz"); // zzz, bbb, yyy, xxx, ddd
@@ -40,8 +40,6 @@ public class Exam0120 {
 
     list.add("eee"); // zzz, aaa, yyy, xxx, ddd, ttt, ccc, eee
     print(list);
-    /*
-     */
   }
 
   static void print(ArrayList list) {
